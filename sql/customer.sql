@@ -1,0 +1,5 @@
+INSERT INTO `customer` (`id`, `username`, `userpic`, `password`, `phone`, `email`, `status`, `create_time`) VALUES (1, '2', '2', '22', '2', NULL, NULL, NULL);
+INSERT INTO `customer` (`id`, `username`, `userpic`, `password`, `phone`, `email`, `status`, `create_time`) VALUES (2, '15271618433', 'http://himg.bdimg.com/sys/portrait/item/95fde99d96e584bf32303036c700.jpg', NULL, '15271618433', NULL, NULL, NULL);
+INSERT INTO `customer` (`id`, `username`, `userpic`, `password`, `phone`, `email`, `status`, `create_time`) VALUES (3, '15271618434', 'http://himg.bdimg.com/sys/portrait/item/95fde99d96e584bf32303036c700.jpg', NULL, '15271618434', NULL, NULL, NULL);
+INSERT INTO `customer` (`id`, `username`, `userpic`, `password`, `phone`, `email`, `status`, `create_time`) VALUES (4, '2131312312', 'http://himg.bdimg.com/sys/portrait/item/95fde99d96e584bf32303036c700.jpg', NULL, '2131312312', NULL, NULL, NULL);
+INSERT INTO `customer` (`id`, `username`, `userpic`, `password`, `phone`, `email`, `status`, `create_time`) VALUES (5, '1527161843', 'http://himg.bdimg.com/sys/portrait/item/95fde99d96e584bf32303036c700.jpg', NULL, '1527161843', NULL, NULL, NULL);

@@ -1,0 +1,19 @@
+ <div class="inputkuang">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>请输入手机号</mat-label>
+     <!-- 使用ngmodul的时候input或者是textarea要使用 -->
+    <textarea matInput placeholder="输入正确手机号" name="phone" [(ngModel)]="peopleinfo.phone" ></textarea>
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>获取验证码</mat-label>
+      <textarea matInput placeholder="输入四位数验证码"  name="code" [(ngModel)]="peopleinfo.code" (focus)="doSubmit()" ></textarea>
+    </mat-form-field>
+  </form>
+
+  <d-button id="primaryBtn"  width="200px" style="margin-left: 15%" (click)="do()">登  录</d-button>
+
+</div>
+
+ 

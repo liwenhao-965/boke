@@ -1,0 +1,111 @@
+.container{
+    height: 1200px;
+    position: relative;
+}
+.containerindex{
+    display: flex;
+    .containerleft{
+        width: 70%;
+        height: 1000px;
+        
+        
+        .containerleftcontent{
+            width: 80%;
+            height: 90%;
+           
+           margin-left: 15%;
+            margin-top: 15px;
+            .containerlist{
+                
+                margin-top: 20px;
+               float:right;
+                width: 100%;
+                height: 200px;
+                display: flex;
+                box-shadow: 0px .5vh 5px 0 rgba(0, 0, 0, 0.25);
+                justify-content:space-between;
+                ul{
+                    flex-grow: 2;
+                    float: left;
+                     margin-left: 30px;
+                    margin-top: 25px;
+                    li>a{
+                        font-size: 25px;
+                        width: 300px;
+                        white-space:nowrap;//禁止文字换行
+                        text-overflow:ellipsis;//文字超过显示省略号
+                        overflow:hidden;
+                        text-decoration:none ; 
+                        color: black;
+                    }
+                    li>a:hover{
+                        
+                            text-decoration:underline ;
+                            color: black;
+                        
+                    }
+                    li>p{
+                        width: 500px;
+                        height:50px ;
+                        line-height: 30px;
+                        // white-space:nowrap;//禁止文字换行
+                        white-space: normal;
+                        overflow: hidden;
+                        text-overflow: ellipsis;  //多行文本超过显示省略号
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        word-break: break-all;
+                        color: #bbbbbb;
+                   
+                    }
+                    
+                }
+                .containerlistimage{
+                     flex-wrap: 1;
+                     width: 150px;
+                      height: 100px;
+                      background-color: red;
+                      margin-top: 20px;
+                      border-radius: 20px;
+                      img{
+                          width: 100%;
+                          height: 100%;
+                          border-radius: 10px;
+                      }
+                     
+                }
+
+            }
+        }
+        .containerleftbuttom{
+            height: 10%;
+            width: 100%;
+            padding-top: 20px;
+            padding-left: 20%;
+        }
+
+
+   }
+   
+   .containerright{
+       width: 30%;
+       height: 800px;
+     
+       
+   }
+}
+
+.contianerfoot{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(231, 113, 16, 0.712);
+    color: rgba(243, 139, 21, 0.712);
+    position:absolute;
+    bottom:0;
+    p{
+        color: rgb(245, 239, 239);
+        padding-top: 2%;
+        padding-left: 40%;
+    }
+}

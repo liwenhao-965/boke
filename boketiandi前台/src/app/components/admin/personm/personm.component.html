@@ -1,0 +1,36 @@
+<table>
+    <thead>
+        <tr>
+            <th>序号</th>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th>生日</th>
+            <th>婚否</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of xuanran;let key = index">
+            <th>{{item.id}}</th>
+            <th>{{item.firstName}}</th>
+            <th>{{item.lastName}}</th>
+            <th>{{item.dob}}</th>
+            <th>{{item.gender}}</th>     
+            <th><button type="button" class="delete" (click)="delete(key)">删除</button></th>       
+        </tr>
+    </tbody>
+</table>
+
+<d-pagination
+  class="page-nation"
+  [size]="'sm'"
+  [total]="pager.total"
+  [pageSize]="pager.pageSize"
+  [showPageSelector]="false"
+  [totalItemText]="'总条数'"
+  [(pageIndex)]="pager.pageIndex"
+  [canViewTotal]="true"
+  [lite]="true"
+  (pageIndexChange)="onPageIndexChange($event)"
+>
+</d-pagination>

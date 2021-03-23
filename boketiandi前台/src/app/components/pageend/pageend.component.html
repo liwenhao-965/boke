@@ -1,0 +1,25 @@
+
+<section>
+    <div>
+        <d-pagination
+        [size]="'sm'"
+        [total]="pager.total"
+        [(pageSize)]="pager.pageSize"
+        [(pageIndex)]="pager.pageIndex"
+        [canViewTotal]="true"
+        [canChangePageSize]="true"
+        [canJumpPage]="true"
+        [maxItems]="5"
+        (pageIndexChange)="onChange($event)"
+        >
+        <!-- 这里是添加了一个鼠标点击事件完成的事件点击返回 -->
+        </d-pagination>
+    </div>
+</section>
+
+ <ul *ngFor="let item of xuanran">
+     <li>{{item.date}}??????
+
+     </li>
+ </ul>
+

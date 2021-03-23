@@ -1,0 +1,39 @@
+<div class="container-header">
+    <div class="biaoqian">
+      <img src="../../../assets/2BFA13BF-192F-4E3F-AA90-12915607255A.png" alt="">
+    </div>
+    <div class="sreach">
+        <d-search [size]="'lg'" (searchFn)="onSearch($event)"></d-search>
+    </div>
+    <div class="login">
+
+        <d-button bsStyle="text-dark" class="rightIcon" bsSize = "lg" 
+        [showLoading]="showLoading" (btnClick)="toggleLoading()" >
+             <p>登 录</p>
+            <span class="icon-set-permission"></span>
+          </d-button>
+
+         
+    </div>
+   
+   
+    <div class="resgin"  >
+        <div class="resginbtn">
+            <d-button bsStyle="text" style="margin-right: 20px">
+            <p> 注  册</p>
+            </d-button>
+        <span class="icon-set-normal-icon" Size = "lg"></span>
+        </div>
+    </div>
+    <div class="writer">
+        <div class="writerbtn">
+            <i class="icon-rename"  ></i>
+            <d-button bsStyle="text" style="margin-right: 20px" (click)="toreg()">
+                <p> 写文章</p>
+                </d-button>
+        </div>
+    </div>
+
+
+</div>
+

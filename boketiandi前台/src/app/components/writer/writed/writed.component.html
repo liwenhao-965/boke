@@ -1,0 +1,30 @@
+<div class="title">
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label class="biaoti">
+              <h2>标题</h2>
+          </mat-label>
+          <input matInput placeholder="开始你的输入吧" class="inputkuang" >
+        </mat-form-field>
+      
+      </form>
+
+</div>
+
+<div class="selecttool">
+  <div class="postimg">
+    <input type="file" (change)="fileChange($event)">
+  </div>
+  <div class="submit">
+    <d-button bsStyle="danger" width="200px" type="submit">发布</d-button>
+  </div>
+
+</div>
+
+<div class="content">
+    <div class="imgurl">
+      <img height="60px" width="60px" [src]="_d.bypassSecurityTrustUrl(imgsrc)">
+    </div>
+    <textarea dTextarea placeholder="开始你的输入吧" resize="both"></textarea>
+
+</div>

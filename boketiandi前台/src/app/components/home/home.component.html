@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="containernav">
+         <app-header></app-header>
+    </div>
+
+
+    <div class="containerindex">
+        <div class="containerleft">
+           
+            <div class="containerleftcontent">
+
+                <div class="containerlist" *ngFor="let item of xuanran">
+                     <ul>
+                         <li>
+                             <a href="#" >{{item.title}}</a>
+                         </li>
+                         <li>
+                             <p>
+                                 {{item.content}}
+                             </p>
+                         </li>
+                        
+                         <li style="margin-top:30px">
+                             
+                            这里预留了一些点赞功能 
+
+                         </li>
+
+                     </ul>
+
+                    <div class="containerlistimage">
+                         <img [src]="item.image" alt="">
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="containerleftbuttom">
+                <d-pagination
+                [size]="'sm'"
+                [total]="pager.total"
+                [(pageSize)]="pager.pageSize"
+                [(pageIndex)]="pager.pageIndex"
+                [canViewTotal]="true"
+                [canChangePageSize]="true"
+                [canJumpPage]="true"
+                [maxItems]="5"
+                (pageIndexChange)="onChange($event)"
+                >
+                <!-- 这里是添加了一个鼠标点击事件完成的事件点击返回 -->
+                </d-pagination>
+            </div>
+
+
+
+         
+        </div>
+    
+            <div class="containerright">
+                <app-panel></app-panel>
+                
+            </div>
+    </div>
+
+    <div class="contianerfoot">
+      <p> 联系我们：git@git.meitiyun.org:liwenhao/wenhaoli-965.git</p>
+        
+    </div>
+
+</div>
+
+
+

@@ -1,0 +1,32 @@
+<div class="login">
+
+    <div class="logo">
+       <img src="../../../assets/back.png" alt="">
+    </div>
+
+    <div class="ladinga">
+        <div class="loginbutton">
+              <div class="titile">
+                  <!-- 父子路由要写成这样父子关系的形式。 -->
+                      <a [routerLink]="[ '/login/loginin' ]" [ngClass]="{'test': sumb==1}" (click)="switch()" >登录</a>
+                      <b>.</b>
+                      <a [routerLink]="[ '/login/regin' ]"   [ngClass]="{'test': sumb==0}" (click)="reswitch()">注册</a>
+              </div>
+        </div>
+
+        <div class="logininput">
+
+            <router-outlet></router-outlet>
+
+        </div>
+
+        <div class="loginbuttom">
+               <button class="admin" (click)="toadmin()">管理员登录</button>
+        </div>
+
+    </div>
+
+
+</div>
+
+

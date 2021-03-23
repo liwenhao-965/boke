@@ -1,0 +1,40 @@
+
+<div class="admin">
+    <div class="header">
+         <p>博客天地后台管理</p>
+    </div>
+    
+    <div class="container">
+        <div class="containerleft">
+            <div class="personmanage" (click)="toperson()">
+                <p>人员管理</p>
+            </div>
+            <div class="personmanagemaster">
+                <p>权限管理</p>
+                <p>登录管理</p>
+                <p>设备管理</p>
+            </div>
+            <div class="artilcemanage" (click)="toarticle()">
+                <p>文章管理</p>
+            </div>
+            <div class="artilcemanagemaster">
+                <p>权限管理</p>
+                <p>登录管理</p>
+                <p>设备管理</p>
+            </div>
+            <div class="artilcemanage" (click)="tosystem()">
+                <p>系统管理</p>
+            </div>
+
+    
+        </div>
+        <div class="containerright">
+            <router-outlet></router-outlet>
+    
+        </div>
+    </div>
+    
+    <div class="foot">
+       <p> 联系我们：git@git.meitiyun.org:liwenhao/wenhaoli-965.git</p>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="observe">
+    <p >用户名：</p>
+    <p style="color: greenyellow;" *ngIf="checkphonenum==1">用户名可用*</p>
+    <p style="color: rgb(255, 78, 47);" *ngIf="checkphonenum==2">用户名不可用*</p>
+    <p style="color: rgb(255, 78, 47);" *ngIf="checkphonenum==3">用户名不能为空*</p>
+</div>
+<input dTextInput placeholder="手机号/邮箱/用户名" 
+id="textInput"  
+[(ngModel)]="people.phone"
+(blur)="checkphone()"/>  
+
+<div class="observe">
+    <p >密 码：</p>
+    <p style="color: greenyellow;" *ngIf="checkuserpass==1">密码格式正确*</p>
+    <p style="color: rgb(255, 78, 47);" *ngIf="checkuserpass==2">密码格式不正确*</p>
+    <p style="color: rgb(255, 78, 47);" *ngIf="checkuserpass==3">密码不能为空*</p>
+</div>
+
+<input  type="password" 
+placeholder="请输入至少八位英文加数字密码" 
+[ngClass]="{'parssword':checkuserpass==0,'parsswordtrue':checkuserpass==1,'passworderror':checkuserpass==2||checkuserpass==3}" 
+name="phone" 
+[(ngModel)]="people.userpass"
+(blur)="checkuser()"
+/>
+
+
+<div class="observe">
+    <p >确认密码：</p>
+    <p style="color: greenyellow;" *ngIf="reresum ==1">两次密码相同*</p>
+    <p style="color: rgb(255, 78, 47);" *ngIf="reresum ==2">两次密码不同*</p>
+    <p style="color: rgb(255, 78, 47);" *ngIf="reresum ==3">还没输入密码*</p>
+    
+    
+</div>
+
+
+<input  type="password" 
+placeholder="两次输入保持一致" 
+[ngClass]="{'parssword':resum==0,'parsswordtrue':reresum==1,'passworderror':reresum==2||reresum==3}"
+name="phone" 
+[(ngModel)]="people.reuserpass"
+
+(blur)="check()"
+
+/>
+
+
+<d-button bsStyle="danger" id="primaryBtn"  width="200px" style="margin-left: 15%;margin-top: 10%;" (click)="do()">注  册</d-button>
+
+
+
